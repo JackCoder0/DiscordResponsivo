@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 459px;
+    background-image: url('/src/img/header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #4e1bf5;
+
+    display: flex;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+
+    width: 757px;
+    gap: 24px;
+}
+
+.header-content h1 {
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header-btns {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header-btns .btn {
+    height: 44px;
+    border-radius: 28px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-content .download {
+    width: 205px;
+    color: #000;
+}
+
+.header-content .open-discord {
+    width: 281px;
+    color: #ffffff;
+    background-color: #23272A;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+section img {
+    max-width: 100%;
+}
+
+.sec01 {
+    width: 971px;
+    height: 394px;
+    gap: 16px;
+
+    margin-top: 40px;
+}
+
+.sec-text01 {
+    width: 348px;
+    height: 374px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sec-text01 h1 {
+    font-weight: 800;
+    color: #23272A;
+    font-size: 2.5rem;
+    width: 329px;
+    height: 270px;
+}
+
+.sec-text01 p {
+    width: 348px;
+    height: 88px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.sec02,
+.sec03 {
+    width: 100%;
+    height: 448px;
+    gap: 16px;
+}
+
+.sec-text02,
+.sec-text03 {
+    width: 351px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sec-text02 h1,
+.sec-text03 h1,
+.sec-text04 h1 {
+    font-weight: 800;
+    color: #23272A;
+    font-size: 2.5rem;
+}
+
+.sec-text02 p,
+.sec-text03 p,
+.sec-text04 p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.sec04 {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec-text04 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 26px;
+}
+
+.sec-text04 h1 {
+    width: 608px;
+    height: 80px;
+    font-family: 'Luckiest Guy', sans-serif;
+}
+
+.sec-text04 p {
+    width: 802px;
+    height: 44px;
+}
+
+footer {
+    background-color: #23272A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100px;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding-top: 70px;
+        width: 100%;
+        height: 505px;
+    }
+
+    .header-content {
+        width: 100%;
+        height: 366px;
+        padding: 0 24px 0 24px;
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+        width: 278px;
+        height: 64px;
+        text-align: left;
+    }
+
+    .header-content p {
+        text-align: left;
+        width: 381px;
+        height: 132px;
+    }
+
+    .header-btns {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .header-btns .btn {
+        width: 381px;
+        height: 54px;
+    }
+
+    .sec01 {
+        width: 100%;
+        height: 573px;
+        gap: 27px;
+        padding: 40px 24px 40px 24px;
+        flex-direction: column;
+    }
+
+    .sec-text01 {
+        width: 348px;
+        height: 374px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .sec-text01 h1 {
+        font-size: 1.5rem;
+        width: 370px;
+        height: 99px;
+    }
+
+    .sec02 {
+        flex-direction: column-reverse;
+    }
+
+    .sec03 {
+        flex-direction: column;
+    }
+
+    .sec02,
+    .sec03 {
+        width: 100%;
+        height: 507px;
+        padding: 40px 24px 40px 24px;
+        gap: 26px;
+    }
+
+    .sec-text02 h1,
+    .sec-text03 h1,
+    .sec-text04 h1 {
+        font-size: 1.5rem;
+    }
+    .sec-text02 p,
+    .sec-text03 p{
+        width: 378px;
+        height: 88px;
+    }
+
+    .sec-text02 p,
+    .sec-text03 p,
+    .sec-text04 p {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .sec04 {
+        width: 100%;
+        height: 560px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 24px 40px 24px;
+        gap: 27px;
+    }
+
+    .sec-text04 {
+        gap: 27px;
+        width: 100%;
+    }
+
+    .sec-text04 h1 {
+        width: 100%;
+        height: 64px;
+        text-align: left;
+    }
+
+    .sec-text04 p {
+        width: 100%;
+        height: 110px;
+        text-align: left;
+    }
+
+
+}
